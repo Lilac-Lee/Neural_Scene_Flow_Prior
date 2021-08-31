@@ -13,17 +13,33 @@ For a detailed installation guide, please go to ```requirements.txt```.
 We provide four datasets we used in our paper.
 You may download datasets used in the paper from these anonymous links:
 
-| KITTI (266MB) | Argoverse (5.3GB) |
+| KITTI (266MB) |
+|:-:|
+| https://drive.google.com/file/d/1PUuOycduXKbla3bPN1a2XL5ZTt27Y1Or/view?usp=sharing |
+
+| Argoverse (5.3GB) |
+|:-:|
+| https://drive.google.com/file/d/1q5twc14tyRqk63npSzfkxmcjejkKHRNK/view?usp=sharing |
+
+| nuScenes (436MB) |
+|:-:|
+| https://drive.google.com/file/d/1xNXIfwlhlMkTqDpVYy4BZDXVqW-Dpe6u/view?usp=sharing |
+
+| FlyingThings3D (436MB) |
+|:-:|
+| https://drive.google.com/file/d/15s6TN1ucKSH2fKW098ddIlHyMPuY-qZ1/view?usp=sharing |
+
+<!-- | KITTI (266MB) | Argoverse (5.3GB) |
 |:-:|:-:|
 | https://drive.google.com/file/d/1PUuOycduXKbla3bPN1a2XL5ZTt27Y1Or/view?usp=sharing | https://drive.google.com/file/d/1q5twc14tyRqk63npSzfkxmcjejkKHRNK/view?usp=sharing |
 
 | nuScenes (436MB) | FlyingThings3D (436MB) |
 |:-:|:-:|
-| https://drive.google.com/file/d/1xNXIfwlhlMkTqDpVYy4BZDXVqW-Dpe6u/view?usp=sharing | https://drive.google.com/file/d/15s6TN1ucKSH2fKW098ddIlHyMPuY-qZ1/view?usp=sharing |
-
+| https://drive.google.com/file/d/1xNXIfwlhlMkTqDpVYy4BZDXVqW-Dpe6u/view?usp=sharing | https://drive.google.com/file/d/15s6TN1ucKSH2fKW098ddIlHyMPuY-qZ1/view?usp=sharing | -->
+<!-- 
 | KITTI (266MB) | Argoverse (5.3GB) | nuScenes (436MB) | FlyingThings3D (436MB) |
 |:-:|:-:|:-:|:-:|
-| https://drive.google.com/file/d/1PUuOycduXKbla3bPN1a2XL5ZTt27Y1Or/view?usp=sharing | https://drive.google.com/file/d/1q5twc14tyRqk63npSzfkxmcjejkKHRNK/view?usp=sharing | https://drive.google.com/file/d/1xNXIfwlhlMkTqDpVYy4BZDXVqW-Dpe6u/view?usp=sharing | https://drive.google.com/file/d/15s6TN1ucKSH2fKW098ddIlHyMPuY-qZ1/view?usp=sharing |
+| https://drive.google.com/file/d/1PUuOycduXKbla3bPN1a2XL5ZTt27Y1Or/view?usp=sharing | https://drive.google.com/file/d/1q5twc14tyRqk63npSzfkxmcjejkKHRNK/view?usp=sharing | https://drive.google.com/file/d/1xNXIfwlhlMkTqDpVYy4BZDXVqW-Dpe6u/view?usp=sharing | https://drive.google.com/file/d/15s6TN1ucKSH2fKW098ddIlHyMPuY-qZ1/view?usp=sharing | -->
 
 After you download the dataset, you can create a symbolic link in the ./dataset folder as ```./dataset/kitti```, ```./dataset/argoverse```, ```./dataset/nuscenes```, and ```./dataset/flyingthings```.
 
