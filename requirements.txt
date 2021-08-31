@@ -1,0 +1,66 @@
+####### install conda #######
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-py37_4.9.2-Linux-x86_64.sh
+bash Miniconda3-py37_4.9.2-Linux-x86_64.sh
+source .bashrc
+conda create -n sf python=3.7
+
+
+####### install argoverse, AFTER install following packages
+git clone https://github.com/argoai/argoverse-api.git
+cd argoverse-api/
+pip install -e .
+
+
+####### NOTE: for pytorch 1.7.1, cuda 10.2
+conda install -c pytorch pytorch=1.7.1 torchvision cudatoolkit=10.2
+conda install -c open3d-admin open3d==0.9.0
+
+
+refer to https://github.com/facebookresearch/pytorch3d/blob/master/INSTALL.md
+conda install -c conda-forge -c fvcore -c iopath fvcore iopath
+conda install -c bottler nvidiacub
+conda install pytorch3d -c pytorch3d
+
+refer to https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
+pip install torch-geometric==1.6.3
+pip install torch-sparse==0.6.8 -f https://pytorch-geometric.com/whl/torch-1.7.0+cu102.html
+pip install torch-scatter==2.0.5 -f https://pytorch-geometric.com/whl/torch-1.7.0+cu102.html
+pip install torch-cluster==1.5.8 -f https://pytorch-geometric.com/whl/torch-1.7.0+cu102.html
+pip install torch-spline-conv==1.2.0 -f https://pytorch-geometric.com/whl/torch-1.7.0+cu102.html
+
+conda install -c conda-forge shapely
+
+refer to https://docs.enthought.com/mayavi/mayavi/installation.html
+pip install mayavi
+pip install PyQt5
+
+
+
+####### NOTE: for pytorch 1.6.0, cuda 10.1
+conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
+conda install -c open3d-admin open3d==0.9.0
+
+
+refer to https://github.com/facebookresearch/pytorch3d/blob/master/INSTALL.md
+conda install -c conda-forge -c fvcore -c iopath fvcore iopath
+conda install -c bottler nvidiacub
+conda install pytorch3d -c pytorch3d
+
+refer to https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
+pip install torch-geometric==1.6.3
+pip install torch-sparse==0.6.8 -f https://pytorch-geometric.com/whl/torch-1.6.0+cu101.html
+pip install torch-scatter==2.0.5 -f https://pytorch-geometric.com/whl/torch-1.6.0+cu101.html
+pip install torch-cluster==1.5.8 -f https://pytorch-geometric.com/whl/torch-1.6.0+cu101.html
+pip install torch-spline-conv==1.2.0 -f https://pytorch-geometric.com/whl/torch-1.6.0+cu101.html
+
+conda install -c conda-forge shapely
+
+# ANCHOR: visualization
+refer to https://docs.enthought.com/mayavi/mayavi/installation.html
+pip install mayavi
+pip install PyQt5
+
+
+# NOTE: if you are not able to install mayavi, you may comment lines with "from mayavi import mlab" in visualize.py,
+# and comment functions "show_flows()" in optimization.py
+# or you may just set --visualize flag to False
