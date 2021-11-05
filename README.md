@@ -1,12 +1,25 @@
 ## Neural Scene Flow Prior
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Will appear on Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS) (2021) as **spotlight**.
+[Xueqian Li](https://lilac-lee.github.io/), [Jhony Kaesemodel Pontes](https://jhonykaesemodel.com/), 
+[Simon Lucey](https://www.adelaide.edu.au/directory/simon.lucey)
+
+Will appear on Thirty-fifth Conference on Neural Information Processing Systems (**NeurIPS, 2021**) as **spotlight**.
+
+arXiv link: https://arxiv.org/pdf/2111.01253.pdf
+
+
+- #### Scene flow results on Argoverse
+    ![Scene flow results on Argoverse](imgs/scene_flow_argoverse.png)
+
+- #### Point cloud integration (left: densified point cloud; right: sparse point cloud)
+    ![Point cloud integration](imgs/point_cloud_integration.gif)
 
 
 ### Prerequisites
 This code is based on PyTorch implementation, and tested on torch=1.6.0 with CUDA 10.1 **OR** torch=1.7.1 with CUDA 10.2. 
 
-For a detailed installation guide, please go to ```requirements.txt```.
+For a detailed installation guide, please go to [requirements.txt](requirements.txt).
 
 
 ### Dataset
@@ -26,7 +39,7 @@ After you download the dataset, you can create a symbolic link in the ./dataset 
 
 
 ### Optimization
-Since we use neural scene flow prior for runtime optimization, our method does not include any training. 
+Since we use neural scene flow prior for runtime optimization, our method does not include any "training". 
 
 Just run following lines for a simple optimization on a small KITTI Scene Flow dataset (only 50 testing samples)
 ```
@@ -157,5 +170,10 @@ python optimization.py \
 ### Contributing
 If you find the project useful for your research, you may cite,
 ```
-This is a placeholder....
+@article{li2021neural,
+  title={Neural scene flow prior},
+  author={Li, Xueqian and Pontes, Jhony Kaesemodel and Lucey, Simon},
+  journal={arXiv preprint arXiv:2111.01253},
+  year={2021}
+}
 ```
