@@ -7,7 +7,7 @@ from torch.utils.data import Dataset
 
 
 class FlyingThings3D(Dataset):
-    def __init__(self, options, partition="train"):
+    def __init__(self, options, partition="test"):
         self.options = options
         self.partition = partition
         if self.partition == "train":
@@ -118,7 +118,7 @@ class FlyingThings3D(Dataset):
 
 
 class KITTISceneFlowDataset(Dataset):
-    def __init__(self, options, train=True):
+    def __init__(self, options, train=False):
         self.options = options
         self.train = train
     
@@ -164,7 +164,7 @@ class KITTISceneFlowDataset(Dataset):
 
 
 class ArgoverseSceneFlowDataset(Dataset):
-    def __init__(self, options, partition="test", width=1):
+    def __init__(self, options, partition="val", width=1):
         self.options = options
         self.partition = partition
         self.width = width

@@ -1,4 +1,4 @@
-## Neural Scene Flow Prior
+## [Neural Scene Flow Prior](https://papers.nips.cc/paper/2021/file/41263b9a46f6f8f22668476661614478-Paper.pdf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [Xueqian Li](https://lilac-lee.github.io/), [Jhony Kaesemodel Pontes](https://jhonykaesemodel.com/), 
@@ -26,14 +26,13 @@ For a detailed installation guide, please go to [requirements.txt](requirements.
 We provide four datasets we used in our paper.
 You may download datasets used in the paper from these anonymous links:
 
-- [KITTI](https://drive.google.com/file/d/1PUuOycduXKbla3bPN1a2XL5ZTt27Y1Or/view?usp=sharing) (266MB)
+- [KITTI](https://drive.google.com/file/d/1pjShY0RxHp0EjkelWGLO_BMR7qCB528p/view?usp=sharing) (266MB)
 
-- [Argoverse](https://drive.google.com/file/d/1q5twc14tyRqk63npSzfkxmcjejkKHRNK/view?usp=sharing) (5.3GB)
+- [Argoverse](https://drive.google.com/file/d/1qyTaLz1_CTF3IB1gr3XpIiIDh6klQOA4/view?usp=sharing) (370MB)
 
-- [nuScenes](https://drive.google.com/file/d/1xNXIfwlhlMkTqDpVYy4BZDXVqW-Dpe6u/view?usp=sharing) (436MB)
+- [nuScenes](https://drive.google.com/file/d/1mCjDqJzaMdW0iiM2N2J5BNvo04dAvTbx/view?usp=sharing) (73MB)
 
-- [FlyingThings3D](https://drive.google.com/file/d/15s6TN1ucKSH2fKW098ddIlHyMPuY-qZ1/view?usp=sharing
-) (436MB)
+- [FlyingThings3D](https://drive.google.com/file/d/1v9M0sRCHKrPj5phHxC03-WsdhctUL9j9/view?usp=sharing) (948MB)
 
 After you download the dataset, you can create a symbolic link in the ./dataset folder as ```./dataset/kitti```, ```./dataset/argoverse```, ```./dataset/nuscenes```, and ```./dataset/flyingthings```.
 
@@ -170,10 +169,10 @@ python optimization.py \
 ### Contributing
 If you find the project useful for your research, you may cite,
 ```
-@article{li2021neural,
-  title={Neural scene flow prior},
+@inproceedings{li2021neural,
+  title={Neural Scene Flow Prior},
   author={Li, Xueqian and Pontes, Jhony Kaesemodel and Lucey, Simon},
-  journal={arXiv preprint arXiv:2111.01253},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
   year={2021}
 }
 ```
