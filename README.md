@@ -4,9 +4,11 @@
 [Xueqian Li](https://lilac-lee.github.io/), [Jhony Kaesemodel Pontes](https://jhonykaesemodel.com/), 
 [Simon Lucey](https://www.adelaide.edu.au/directory/simon.lucey)
 
-Will appear on Thirty-fifth Conference on Neural Information Processing Systems (**NeurIPS, 2021**) as **spotlight**.
+Will appear on Thirty-fifth Conference on Neural Information Processing Systems (**NeurIPS, 2021**) as **spotlight** presentation.
 
-arXiv link: https://arxiv.org/pdf/2111.01253.pdf
+Project page: https://lilac-lee.github.io/Neural_Scene_Flow_Prior/.
+
+arXiv link: https://arxiv.org/pdf/2111.01253.pdf.
 
 
 - #### Scene flow results on Argoverse
