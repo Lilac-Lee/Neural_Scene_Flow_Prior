@@ -1,0 +1,215 @@
+<html>
+
+<head>
+    <title>Neural Scene Flow Prior</title>
+    <meta https-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./assets/css/academicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <!-- modernizr enables HTML5 elements and feature detects -->
+    <script type="text/javascript" src="../js/modernizr-1.5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:light,normal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88237102-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer||[];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js",new Date());
+        gtag("config","UA-88237102-2");
+    </script>
+    <meta name="google-site-verification" content="-qf5PjwYVsvTpZ7HphVPX7GvqNF82-Zzjq8ALA7O-lU"/>
+    <base target="_blank">
+</head>
+
+<html>
+
+<body>
+    <div id="content">
+        <h1>Neural Scene Flow Prior</h1>
+        <div style="text-align: center">
+            <span class="author"><a href="https://lilac-lee.github.io/">Xueqian Li</a><sup>1,2</sup></span>
+            <span class="author"><a href="https://jhonykaesemodel.com">Jhony Kaesemodel Pontes</a><sup>1</sup></span>
+            <span class="author"><a href="https://www.adelaide.edu.au/directory/simon.lucey/">Simon Lucey</a><sup>2</sup></span>
+        </div>
+        <div class="affil">
+            <span style="padding-right: 2em"><sup>1</sup>Argo AI</span>
+            <span style="padding-right: 2em"><sup>2</sup>The University of Adelaide</span>
+        </div>
+        <div class="venue">35th Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2021<br>
+            <span style="color:#F00"><b>spotlight presentation</b></span></div>
+
+        <table class='icon_tb'>
+            <tr>
+                <td>
+                    <div class='icons'>
+                    <a href="https://papers.nips.cc/paper/2021/file/41263b9a46f6f8f22668476661614478-Paper.pdf"><img class="layered-paper" src="./resources/nsfp_paper_thumbnail.png"/><span>paper</span></a></div>
+                </td>
+                <td>
+                    <div class='icons'>
+                    <a href="https://github.com/Lilac-Lee/Neural_Scene_Flow_Prior/tree/main" target='_blank'><i class="fa fa-github"></i><span>code</span></a></div>
+                </td>
+                <td>
+                    <div class='icons'>
+                    <a href="https://drive.google.com/file/d/1kvLvt9B6e0_j6VjzKAhnyWDDuM-v1zd0/preview"><img class="poster" src="./resources/nsfp_poster_thumbnail.png"/><span>poster</span></a></div>
+                </td>
+                <td>
+                    <div class='icons'>
+                    <a href="https://drive.google.com/drive/folders/1dOIWbk46t2FO9t_exRe6UWsgzG7q1VJe?usp=sharing" target='_blank'><i class="fa fa-database"></i><span>data</span></a></div>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+        
+        <div class="divider"><img src="./resources/scene_flow_argoverse.png" width=800></div>
+
+        <h2>Abstract</h2>
+        <div class="text">
+            <p>Before the deep learning revolution, many perception algorithms were based on
+                runtime optimization in conjunction with a strong prior/regularization penalty. A
+                prime example of this in computer vision is optical and scene flow. Supervised
+                learning has largely displaced the need for explicit regularization. Instead, they
+                rely on large amounts of labeled data to capture prior statistics, which are not
+                always readily available for many problems. Although optimization is employed to
+                learn the neural network, the weights of this network are frozen at runtime. As a
+                result, these learning solutions are domain-specific and do not generalize well to
+                other statistically different scenarios. This paper revisits the scene flow problem
+                that relies predominantly on runtime optimization and strong regularization. A
+                central innovation here is the inclusion of a neural scene flow prior, which
+                uses the architecture of neural networks as a new type of implicit regularizer.
+                Unlike learning-based scene flow methods, optimization occurs at runtime, and
+                our approach needs no offline datasets—making it ideal for deployment in new
+                environments such as autonomous driving. We show that an architecture based
+                exclusively on multilayer perceptrons (MLPs) can be used as a scene flow prior.
+                Our method attains competitive—if not better—results on scene flow benchmarks.
+                Also, our neural prior’s implicit and continuous scene flow representation allows
+                us to estimate dense long-term correspondences across a sequence of point clouds.
+                The dense motion information is represented by scene flow fields where points can
+                be propagated through time by integrating motion vectors. We demonstrate such a
+                capability by accumulating a sequence of lidar point clouds.</p>
+        </div>
+        <br>
+        <hr>
+
+        <h2>A continuous scene flow field</h2>
+        <div class="text">
+            <div class="divider"><img src="./resources/scene_flow_field.png" width=800></div>
+            <p class='caption'>
+                Example showing how the estimated scene flow and the continuous flow field (bottom)
+                given by our neural prior change as the optimization converges to a solution. We show a top-view
+                dynamic driving scene from Argoverse Scene Flow. The scene flow color encodes the magnitude
+                (color intensity) and direction (angle) of the flow vectors. For example, the <b style='color: rgb(170, 7, 170)'>purplish</b> vehicles are
+                heading northeast. The <b style='color: rgb(255,0,0)'>red</b> arrow shows the position and direction of travel of the autonomous vehicle,
+                which is stopped, waiting for a pedestrian to cross the street. Note how the predicted scene flow is
+                close to the ground truth at iteration 2k. At iteration 0, the scene flow is random, given the random
+                initialization of the neural prior. Thus having very small magnitudes for the random directions. As
+                the optimization went on, the flow fields became better constrained. A simple way to interpret the
+                flow fields is to sample a point at any location in the continuous scene flow field to recover
+                an estimated flow. For example, imagine sampling a point around the <b style='color: rgb(247, 140, 70)'>orange</b> region in the
+                flow field at iteration 2k (<b style='color: rgb(83, 168, 6)'>green</b> arrow in the bottom right). The direction of the flow vector will be
+                pointing southeast at a specific magnitude, similar to the vehicles in the orange region.
+            </p>
+        </div>
+
+        <h2>Application: point cloud densification</h2>
+        <div class="text">
+            <p>
+                Here we demonstrate an exmaple of doing point cloud densification using our method.
+                Given a long sequence of point sets, we first optimize to find the flow 
+                for the successive point cloud pairs using our method.
+                Then, we use forward Euler integration to recursively densify the point clouds.
+                The video below shows a densified point cloud sequence across 25 frames 
+                compared to the original sparse point cloud sequence.
+                Note that we used 11 frames to do the integration.
+            </p>
+        </div>
+        <table align=center, style="width: 100%;">
+            <tr>
+                <th style='font-size: 22px'>Integrated dense point cloud</th>
+                <th style='font-size: 22px'>Original sparse point cloud</th>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <img class='round' style='width:500px' src='./resources/dense_pcs_08a.gif'>
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <img class='round' style='width:500px' src='./resources/sparse_pcs_08a.gif'>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+
+        <h2>Short talk</h2>
+        <div style="text-align: center">
+            <iframe width=900 height=506 class="large_video" src="https://www.youtube.com/embed/WMcoLINtDYY" frameborder=0></iframe>
+        </div>
+
+        <br>
+        <hr>
+
+        <h2>Citation</h2>
+            <div class="bibtex">
+                @inproceedings{li2021neural,<br>
+                &nbsp;&nbsp;title={Neural Scene Flow Prior},<br>
+                &nbsp;&nbsp;author={Li, Xueqian and Pontes, Jhony Kaesemodel and Lucey, Simon},<br>
+                &nbsp;&nbsp;booktitle={Thirty-Fifth Conference on Neural Information Processing Systems ({NeurIPS})},<br>
+                &nbsp;&nbsp;year={2021}<br>
+                }
+            </div>
+
+        <h2>Acknowledgements</h2>
+        <div class="text">
+            <p>The authors would like to thank Chen-Hsuan Lin for useful discussions through the project, review and
+                help with section 3. We thank Haosen Xing for careful review of the entire manuscript and assistance
+                in several parts of the paper, Jianqiao Zheng for helpful discussions. We thank all anonymous
+                reviewers for their valuable comments and suggestions to make our paper stronger.</p>
+        </div>
+
+        <hr>
+
+        <div class='ack_temp'>
+		<p>
+            This template was inspired by project pages from <a href="https://chenhsuanlin.bitbucket.io/">Chen-Hsuan Lin</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
+		</p>
+	    </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // $("video").each(function(){ $(this)[0].play() });
+        });
+        // $(window).scroll(function() {
+        //     $("video").each(function() {
+        //         if ($(this).visible(true)) {
+        //             $(this)[0].play();
+        //         } else {
+        //             $(this)[0].pause();
+        //         }
+        //     });
+        // });
+        // $("video").each(function(){ $(this)[0].play() });
+    </script>
+
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 11275211; 
+        var sc_invisible = 1; 
+        var sc_security = "859888d0"; 
+        var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+        document.write("<sc"+"ript type='text/javascript' src='"+scJsHost+"statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript>
+        <div class="statcounter"><a title="web analytics" href="http://statcounter.com/"><img class="statcounter" src="//c.statcounter.com/11275211/0/859888d0/1/" alt="web analytics"></a></div>
+    </noscript>
+    <!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

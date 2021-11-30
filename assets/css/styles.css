@@ -1,0 +1,297 @@
+@import url("https://rsms.me/inter/inter.css");
+@font-face { 
+    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+    font-family: 'Garamond Regular';
+    font-family: Times, serif;
+} 
+
+html, body { 
+	height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	letter-spacing: -0.1pt;
+}
+
+* { 
+	margin: 0;
+	padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, header, hgroup, nav, section { 
+	display:block;
+}
+
+body { 
+	font: 500 1.0em Times, sans-serif;
+	color: #000;
+}
+
+#content {
+	width: 1000px;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+h1 { 
+	font-size: 45px;
+	text-align: center;
+	font: 800 240% 'Comic Sans MS', cursive, sans-serif;
+	color:rgb(42, 3, 78);
+	padding: 30px 0 30px 0;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	font: 800 180% 'Garamond Regular';
+	text-shadow: 0px 0px 0.5px #888; 
+	color:rgb(63, 4, 119);
+	margin: 40px 0 15px 0;
+	padding-left: 50px;
+}
+
+h4 {
+	font: 400 110% 'Garamond Regular';
+	margin: 0 0 5px 0;
+}
+
+hr{
+	border: 0;
+	height: 1.3px;
+	background-image: linear-gradient(to right, rgba(54, 4, 95, 0), rgba(59, 6, 102, 0.75), rgba(54, 4, 95, 0));
+}
+
+.author {
+	font-size: 20px;
+	font: 400 120% 'Comic Sans MS', cursive, sans-serif;
+	color: rgb(102, 7, 190);
+	text-shadow: 0px 0px 0.5px rgb(237, 187, 250); 
+	text-align: center;
+	padding-right: 24pt;
+}
+
+.author:hover {
+	font-size: 20px; 
+	font: 400 122% 'Comic Sans MS', cursive, sans-serif;
+	color: rgb(170, 2, 170); 
+	text-shadow: 0px 0px 2px rgb(250, 181, 250); 
+}
+
+.affil {
+	font-size: 20px;
+	font: 400 110% 'Comic Sans MS', cursive, sans-serif;
+	color: rgb(23, 124, 3);
+	text-shadow: 0px 0px 0.5px rgb(198, 250, 139); 
+	text-align: center;
+	padding: 5px 0 10px 0;
+}
+.venue {
+	font-size: 20px;
+	font: 400 120% 'Comic Sans MS', cursive, sans-serif;
+	color: rgb(238, 98, 5);
+	text-shadow: 0px 0px 0.5px rgb(255, 199, 136); 
+	text-align: center;
+	padding: 10px 0 0px 0;
+}
+.venue b {
+	font-size: 20px;
+	font-weight: 600;
+}
+.divider {
+	text-align: center;
+	padding: 20px 0 10px 0;
+}
+
+.text {
+	font-size: 18px;
+	font-weight: 500;
+	margin: auto;
+	text-align: justify;
+	padding: 0 42px 0 52px;
+	line-height: 1.35em;
+}
+.text p {
+	padding: 0 0 10px 0;
+}
+
+.caption{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 120%;
+	margin: auto;
+	text-align: justify;
+	padding: 0 42px 0 52px;
+	padding: 0 0 10px 0;
+}
+
+.large_video {
+    margin: 10px 0 0 0;
+    border: 1px solid rgb(42, 3, 78);
+    box-shadow: 7px 7px 7px rgba(225, 181, 250, 0.5);
+}
+
+.others {
+	font: 400 110% Times;
+	margin: 0 0 10px 0;
+	padding-left: 52px;
+	line-height: 1.4em;
+}
+
+.layered-paper span{
+	font: 20 37% 'Garamond Regular', Times, serif;
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+	color:rgb(42, 3, 78);
+	padding:1px 0 0 0;
+  	display:block;
+	text-align: center;
+	float: center;
+}
+
+.icon_tb{
+	display:block;
+	width: 70%;
+	height: auto;
+	float: center;
+	margin-left: auto;
+  	margin-right: auto;
+	text-align: center;
+}
+
+.icon_tb td{
+	vertical-align: bottom;
+	width: 70%;
+	height: auto;
+	float: center;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.icons {
+	font: 400 370% 'Garamond Regular', Times, serif;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	color:rgb(42, 3, 78);
+	margin-left: 37px;
+	margin-right: 37px;
+	/* margin-left: auto;
+	margin-right: auto; */
+	float: center;
+    display: block;
+}
+
+.icons .layered-paper{
+	box-shadow:
+	0px 0px 1px 1px rgba(42, 3, 78, 0.35), /* The top layer shadow */
+	2px 2px 0 0px #fff, /* The second layer */
+	2px 2px 1px 1px rgba(42, 3, 78, 0.25), /* The second layer shadow */
+	4px 4px 0 0px #fff, /* The third layer */
+	4px 4px 1px 1px rgba(42, 3, 78, 0.20), /* The third layer shadow */
+	6px 6px 0 0px #fff, /* The fourth layer */
+	6px 6px 1px 1px rgba(42, 3, 78, 0.15); /* The fourth layer shadow */
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 7px;
+	height: auto;
+	float: center;
+	text-align: center;
+	display: block;
+}
+
+.icons .layered-paper:hover{
+	box-shadow:
+	0px 0px 1px 1px rgba(42, 3, 78, 0.35), /* The top layer shadow */
+	2px 2px 0 0px #fff, /* The second layer */
+	2px 2px 1.5px 1.5px rgba(222, 161, 250, 0.7), /* The second layer shadow */
+	4px 4px 0 0px #fff, /* The third layer */
+	4px 4px 1.5px 1.5px rgba(222, 161, 250, 0.7), /* The third layer shadow */
+	6px 6px 0 0px #fff, /* The fourth layer */
+	6px 6px 1.5px 1.5px rgba(222, 161, 250, 0.7); /* The fourth layer shadow */
+	font-size: 20px; 
+	font: 400 370% 'Garamond Regular', Times, serif;
+	color: rgb(222, 161, 250); 
+	text-shadow: 2px 2px 2px rgb(250, 181, 250); 
+	display: block;
+}
+
+.icons .poster{
+	box-shadow:
+	0px 0px 1px 1px rgba(42, 3, 78, 0.35); /* The top layer shadow */
+	width: 110%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3px;
+	float: center;
+	text-align: center;
+	display: block;
+}
+
+.icons .poster:hover{
+	box-shadow:
+	1px 1px 1px 1px rgba(222, 161, 250, 0.7); /* The top layer shadow */
+	/* 2px 2px 0 0px rgb(222, 161, 250, 0.7); */
+	display: block;
+}
+
+.icons span{
+	font: 20 37% 'Garamond Regular', Times, serif;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	color:rgb(42, 3, 78);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding:1px 0 0 0;
+  	display:block;
+	float: center;
+}
+
+.icons:hover{
+	font-size: 20px; 
+	font: 400 370% 'Garamond Regular', Times, serif;
+	color: rgb(222, 161, 250); 
+	text-shadow: 2px 2px 2px rgb(250, 181, 250); 
+}
+
+a, a:hover { 
+	outline: none;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+a:hover{
+	text-shadow: 2px 2px 2px rgb(250, 181, 250); 
+}
+
+/* .author {font-size: 20px; font: 400 118% 'Comic Sans MS', cursive, sans-serif; color: rgb(102, 7, 190); text-shadow: 0px 0px 0.5px rgb(216, 102, 245); } */
+
+
+.inactive { color:#888; text-shadow: 0px 0px 0px #FFF; }
+
+.link {
+	font-weight: 500;
+}
+
+.bibtex {
+	width: 70%;
+	letter-spacing: 0pt;
+	background-color: #FFF;
+	font: 95% sans-serif;
+	line-height: 12pt;
+	border: 2px solid rgba(59, 6, 102);
+	margin: auto;
+	float: center;
+	padding: 15px 15px 15px 15px;
+}
+
+.enlarge {
+	padding-bottom: 10px;
+	margin: auto;
+}
+
+.ack_temp{
+	text-align: center;
+	padding-top: 7px;
+}
