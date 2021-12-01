@@ -1,8 +1,14 @@
-@import url("https://rsms.me/inter/inter.css");
+
 @font-face { 
-    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
-    font-family: 'Garamond Regular';
+    font-family: "Comic Sans MS", 'Chalkboard SE', "Comic Sans", sans-serif, cursive;
+    font-family: 'Garamond Regular', 'Eason', 'Maiola';
     font-family: Times, serif;
+	src: url('webfont.eot'); /* IE9 Compat Modes */
+  	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 } 
 
 html, body { 
@@ -36,7 +42,7 @@ body {
 h1 { 
 	font-size: 45px;
 	text-align: center;
-	font: 800 240% 'Comic Sans MS', cursive, sans-serif;
+	font: 800 240% 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', sans-serif, cursive;
 	color:rgb(42, 3, 78);
 	padding: 30px 0 30px 0;
 }
@@ -44,7 +50,7 @@ h1 {
 h2 {
 	font-size: 30px;
 	text-align: center;
-	font: 800 180% 'Garamond Regular';
+	font: 800 180% 'Garamond Regular', 'Eason', 'Maiola', Times, serif;
 	text-shadow: 0px 0px 0.5px #888; 
 	color:rgb(63, 4, 119);
 	margin: 40px 0 15px 0;
@@ -52,7 +58,7 @@ h2 {
 }
 
 h4 {
-	font: 400 110% 'Garamond Regular';
+	font: 400 110% 'Garamond Regular', 'Eason', 'Maiola', Times, serif;
 	margin: 0 0 5px 0;
 }
 
@@ -64,7 +70,7 @@ hr{
 
 .author {
 	font-size: 20px;
-	font: 400 120% 'Comic Sans MS', cursive, sans-serif;
+	font: 400 120% 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', sans-serif, cursive;
 	color: rgb(102, 7, 190);
 	text-shadow: 0px 0px 0.5px rgb(237, 187, 250); 
 	text-align: center;
@@ -73,14 +79,14 @@ hr{
 
 .author:hover {
 	font-size: 20px; 
-	font: 400 122% 'Comic Sans MS', cursive, sans-serif;
+	font: 400 120% 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', sans-serif, cursive;
 	color: rgb(170, 2, 170); 
 	text-shadow: 0px 0px 2px rgb(250, 181, 250); 
 }
 
 .affil {
 	font-size: 20px;
-	font: 400 110% 'Comic Sans MS', cursive, sans-serif;
+	font: 400 110% 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', sans-serif, cursive;
 	color: rgb(23, 124, 3);
 	text-shadow: 0px 0px 0.5px rgb(198, 250, 139); 
 	text-align: center;
@@ -88,7 +94,7 @@ hr{
 }
 .venue {
 	font-size: 20px;
-	font: 400 120% 'Comic Sans MS', cursive, sans-serif;
+	font: 400 120% 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', sans-serif, cursive;
 	color: rgb(238, 98, 5);
 	text-shadow: 0px 0px 0.5px rgb(255, 199, 136); 
 	text-align: center;
@@ -139,7 +145,7 @@ hr{
 }
 
 .layered-paper span{
-	font: 20 37% 'Garamond Regular', Times, serif;
+	font: 20 37% 'Garamond Regular', 'Eason', 'Maiola', Times, serif;
 	text-align: center;
 	padding: 20px 20px 20px 20px;
 	color:rgb(42, 3, 78);
@@ -169,7 +175,7 @@ hr{
 }
 
 .icons {
-	font: 400 370% 'Garamond Regular', Times, serif;
+	font: 400 370% 'Garamond Regular', 'Eason', 'Maiola', Times, serif;
 	text-align: center;
 	padding: 20px 0 20px 0;
 	color:rgb(42, 3, 78);
@@ -210,7 +216,7 @@ hr{
 	6px 6px 0 0px #fff, /* The fourth layer */
 	6px 6px 1.5px 1.5px rgba(222, 161, 250, 0.7); /* The fourth layer shadow */
 	font-size: 20px; 
-	font: 400 370% 'Garamond Regular', Times, serif;
+	font: 400 370% 'Garamond Regular', 'Eason', 'Maiola', Times, serif;
 	color: rgb(222, 161, 250); 
 	text-shadow: 2px 2px 2px rgb(250, 181, 250); 
 	display: block;
@@ -237,7 +243,7 @@ hr{
 }
 
 .icons span{
-	font: 20 37% 'Garamond Regular', Times, serif;
+	font: 20 37% 'Garamond Regular', 'Eason', 'Maiola', Times, serif;
 	text-align: center;
 	padding: 20px 0 20px 0;
 	color:rgb(42, 3, 78);
@@ -250,7 +256,7 @@ hr{
 
 .icons:hover{
 	font-size: 20px; 
-	font: 400 370% 'Garamond Regular', Times, serif;
+	font: 400 370% 'Garamond Regular', 'Eason', 'Maiola', Times, serif;
 	color: rgb(222, 161, 250); 
 	text-shadow: 2px 2px 2px rgb(250, 181, 250); 
 }
