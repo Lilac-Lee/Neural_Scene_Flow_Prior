@@ -3,6 +3,7 @@
     font-family: "Comic Sans MS", 'Chalkboard SE', "Comic Sans", sans-serif, cursive;
     font-family: 'Garamond Regular', 'Eason', 'Maiola';
     font-family: Times, serif;
+	src: url('css/fonts/ComicSansMS3.ttf');
 	src: url('webfont.eot'); /* IE9 Compat Modes */
   	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
