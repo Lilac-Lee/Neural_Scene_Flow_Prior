@@ -263,6 +263,11 @@ hr{
 a, a:hover { 
 	outline: none;
 	text-decoration: none;
+	color: rgb(102, 7, 190);
+}
+
+a:hover{
+	text-shadow: 2px 2px 2px rgb(250, 181, 250); 
 }
 
 .inactive { color:#888; text-shadow: 0px 0px 0px #FFF; }
