@@ -82,7 +82,7 @@ hr{
 	font-size: 20px; 
 	font: 400 120% 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', sans-serif, cursive;
 	color: rgb(170, 2, 170); 
-	text-shadow: 0px 0px 2px rgb(250, 181, 250); 
+	text-shadow: 2px 2px 2px rgb(250, 181, 250); 
 }
 
 .affil {
@@ -262,15 +262,6 @@ hr{
 	text-shadow: 2px 2px 2px rgb(250, 181, 250); 
 }
 
-a, a:hover { 
-	outline: none;
-	text-decoration: none;
-	font-weight: 400;
-}
-
-a:hover{
-	text-shadow: 2px 2px 2px rgb(250, 181, 250); 
-}
 
 /* .author {font-size: 20px; font: 400 118% 'Comic Sans MS', cursive, sans-serif; color: rgb(102, 7, 190); text-shadow: 0px 0px 0.5px rgb(216, 102, 245); } */
 
