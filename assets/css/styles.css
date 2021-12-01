@@ -3,7 +3,7 @@
     font-family: "Comic Sans MS", 'Chalkboard SE', "Comic Sans", sans-serif, cursive;
     font-family: 'Garamond Regular', 'Eason', 'Maiola';
     font-family: Times, serif;
-	src: url('css/fonts/ComicSansMS3.ttf');
+	src: url('assets/css/fonts/ComicSansMS3.ttf');
 	src: url('webfont.eot'); /* IE9 Compat Modes */
   	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
@@ -182,8 +182,6 @@ hr{
 	color:rgb(42, 3, 78);
 	margin-left: 37px;
 	margin-right: 37px;
-	/* margin-left: auto;
-	margin-right: auto; */
 	float: center;
     display: block;
 }
@@ -262,9 +260,10 @@ hr{
 	text-shadow: 2px 2px 2px rgb(250, 181, 250); 
 }
 
-
-/* .author {font-size: 20px; font: 400 118% 'Comic Sans MS', cursive, sans-serif; color: rgb(102, 7, 190); text-shadow: 0px 0px 0.5px rgb(216, 102, 245); } */
-
+a, a:hover { 
+	outline: none;
+	text-decoration: none;
+}
 
 .inactive { color:#888; text-shadow: 0px 0px 0px #FFF; }
 
