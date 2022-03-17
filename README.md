@@ -171,10 +171,11 @@ python optimization.py \
 ### Contributing
 If you find the project useful for your research, you may cite,
 ```
-@inproceedings{li2021neural,
+@article{li2021neural,
   title={Neural Scene Flow Prior},
-  author={Li, Xueqian and Pontes, Jhony Kaesemodel and Lucey, Simon},
-  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  author={Li, Xueqian and Kaesemodel Pontes, Jhony and Lucey, Simon},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
   year={2021}
 }
 ```
