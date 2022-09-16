@@ -4,12 +4,17 @@
 [Xueqian Li](https://lilac-lee.github.io/), [Jhony Kaesemodel Pontes](https://jhonykaesemodel.com/), 
 [Simon Lucey](https://www.adelaide.edu.au/directory/simon.lucey)
 
-Will appear on Thirty-fifth Conference on Neural Information Processing Systems (**NeurIPS, 2021**) as **spotlight** presentation.
+Thirty-fifth Conference on Neural Information Processing Systems (**NeurIPS, 2021**), **Spotlight** presentation.
 
 Project page: https://lilac-lee.github.io/Neural_Scene_Flow_Prior/.
 
 arXiv link: https://arxiv.org/pdf/2111.01253.pdf.
 
+
+### Update:
+The code for preprocessing the dataset to get the pseudo scene flow is released! You can find it in [preprocess_sf.py](preprocess_sf.py).
+
+---
 
 - #### Scene flow results on Argoverse
     ![Scene flow results on Argoverse](imgs/scene_flow_argoverse.png)
@@ -17,6 +22,7 @@ arXiv link: https://arxiv.org/pdf/2111.01253.pdf.
 - #### Point cloud integration (left: densified point cloud; right: sparse point cloud)
     ![Point cloud integration](imgs/point_cloud_integration.gif)
 
+---
 
 ### Prerequisites
 This code is based on PyTorch implementation, and tested on torch=1.6.0 with CUDA 10.1 **OR** torch=1.7.1 with CUDA 10.2. 
@@ -38,6 +44,7 @@ You may download datasets used in the paper from these anonymous links:
 
 After you download the dataset, you can create a symbolic link in the ./dataset folder as ```./dataset/kitti```, ```./dataset/argoverse```, ```./dataset/nuscenes```, and ```./dataset/flyingthings```.
 
+---
 
 ### Optimization
 Since we use neural scene flow prior for runtime optimization, our method does not include any "training". 
@@ -167,6 +174,7 @@ python optimization.py \
 --visualize
 ```
 
+---
 
 ### Contributing
 If you find the project useful for your research, you may cite,

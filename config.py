@@ -58,6 +58,7 @@ def add_config(parser):
     parser.add_argument('--model', type=str, default='neural_prior', choices=['neural_prior'], metavar='N', help='Model to use.')
     parser.add_argument('--weight_decay', type=float, default=1e-4, metavar='N', help='Weight decay.')
     parser.add_argument('--hidden_units', type=int, default=128, metavar='N', help='Number of hidden units in neural prior')
+    parser.add_argument('--layer_size', type=int, default=8, metavar='N', help='Number of layers in neural prior')
     parser.add_argument('--use_all_points', action='store_true', default=False, help='use all the points or not.')
     parser.add_argument('--act_fn', type=str, default='relu', metavar='AF', help='activation function for neural prior.')
     parser.add_argument('--backward_flow', action='store_true', default=True, help='use backward flow or not.')

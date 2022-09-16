@@ -186,7 +186,7 @@ def optimize_neural_prior(options, data_loader):
     outputs = []
     
     if options.model == 'neural_prior':
-        net = Neural_Prior(filter_size=options.hidden_units, act_fn=options.act_fn).cuda()
+        net = Neural_Prior(filter_size=options.hidden_units, act_fn=options.act_fn, layer_size=options.layer_size).cuda()
     else:
         raise Exception("Model not available.")    
 

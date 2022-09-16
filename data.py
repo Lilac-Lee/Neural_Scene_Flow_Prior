@@ -7,10 +7,10 @@ from torch.utils.data import Dataset
 
 
 class FlyingThings3D(Dataset):
-    def __init__(self, options, partition="test"):
+    def __init__(self, options, partition='test'):
         self.options = options
         self.partition = partition
-        if self.partition == "train":
+        if self.partition == 'train':
             self.datapath = glob.glob(f"{self.options.dataset_path}/TRAIN*.npz")
         else:
             self.datapath = glob.glob(f"{self.options.dataset_path}/TEST*.npz")
@@ -164,16 +164,16 @@ class KITTISceneFlowDataset(Dataset):
 
 
 class ArgoverseSceneFlowDataset(Dataset):
-    def __init__(self, options, partition="val", width=1):
+    def __init__(self, options, partition='val', width=1):
         self.options = options
         self.partition = partition
         self.width = width
 
-        if self.partition == "train":
+        if self.partition == 'train':
             self.datapath = sorted(glob.glob(f"{self.options.dataset_path}/training/*/*/*"))
-        elif self.partition == "test":
+        elif self.partition == 'test':
             self.datapath = sorted(glob.glob(f"{self.options.dataset_path}/testing/*/*/*"))
-        elif self.partition == "val":
+        elif self.partition == 'val':
             self.datapath = sorted(glob.glob(f"{self.options.dataset_path}/val/*/*"))
             
     def __len__(self):
@@ -182,7 +182,7 @@ class ArgoverseSceneFlowDataset(Dataset):
     def __getitem__(self, index):
         filename = self.datapath[index]
 
-        log_id = filename.split("/")[-3]
+        log_id = filename.split('/')[-3]
         dataset_dir = filename.split(log_id)[0]
 
         with open(filename, 'rb') as fp:
