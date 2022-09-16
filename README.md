@@ -12,7 +12,7 @@ arXiv link: https://arxiv.org/pdf/2111.01253.pdf.
 
 
 ### Update:
-The code for preprocessing the dataset to get the pseudo scene flow is released! You can find it in [preprocess_sf.py](preprocess_sf.py).
+#### **The code for preprocessing the dataset to get the pseudo scene flow is released! You can find it in [preprocess_sf_argoverse.py](preprocess_sf_argoverse.py) and [preprocess_sf_nuscenes.py](preprocess_sf_nuscenes.py).**
 
 ---
 
