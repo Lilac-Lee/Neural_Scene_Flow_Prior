@@ -12,7 +12,10 @@ arXiv link: https://arxiv.org/pdf/2111.01253.pdf.
 
 
 ### Update:
-#### **The code for preprocessing the dataset to get the pseudo scene flow is released! You can find it in [preprocess_sf_argoverse.py](preprocess_sf_argoverse.py) and [preprocess_sf_nuscenes.py](preprocess_sf_nuscenes.py).**
+- #### ***We have a new project that makes the runtime optimization of the neural scene flow prior faster, achieving near real-time performance compared to learning-based methods. Please check out the code at [FastNSF](https://github.com/Lilac-Lee/FastNSF).***
+
+
+- #### ***The code for preprocessing the dataset to get the pseudo scene flow is released! You can find it in [preprocess_sf_argoverse.py](preprocess_sf_argoverse.py) and [preprocess_sf_nuscenes.py](preprocess_sf_nuscenes.py).***
 
 ---
 
